@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -61,21 +62,27 @@ const AdminDashboard = () => {
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-4">
-                <Button className="gradient-primary text-primary-foreground interactive-scale">
-                  <Users className="w-4 h-4 mr-2" />
-                  Manage Users
-                </Button>
-                <Button className="gradient-success text-success-foreground interactive-scale">
-                  <BarChart3 className="w-4 h-4 mr-2" />
-                  View Reports
-                </Button>
+                <Link to="/admin/users">
+                  <Button className="gradient-primary text-primary-foreground interactive-scale w-full">
+                    <Users className="w-4 h-4 mr-2" />
+                    Manage Users
+                  </Button>
+                </Link>
+                <Link to="/reports">
+                  <Button className="gradient-success text-success-foreground interactive-scale w-full">
+                    <BarChart3 className="w-4 h-4 mr-2" />
+                    View Reports
+                  </Button>
+                </Link>
                 <Button variant="outline" className="interactive-scale">
                   <Shield className="w-4 h-4 mr-2" />
                   Security Scan
                 </Button>
-                <Button variant="outline" className="interactive-scale">
-                  System Settings
-                </Button>
+                <Link to="/admin/settings">
+                  <Button variant="outline" className="interactive-scale w-full">
+                    System Settings
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
