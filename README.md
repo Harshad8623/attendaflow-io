@@ -1,73 +1,32 @@
-# Welcome to your Lovable project
+# AttendaFlow — Attendance Management Prototype
 
-## Project info
+A React + TypeScript attendance-management web prototype developed with Vite, Tailwind CSS, shadcn/ui components, and Supabase integration.
 
-**URL**: https://lovable.dev/projects/c8f78d5e-5cf8-45f4-a8f4-c08efa3e1831
+## Technology
 
-## How can I edit this code?
+- React and TypeScript for the browser interface
+- Vite for local development and builds
+- Tailwind CSS and shadcn/ui for interface components
+- Supabase client integration
+- ESLint for static code checks
 
-There are several ways of editing your application.
+## Run locally
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/c8f78d5e-5cf8-45f4-a8f4-c08efa3e1831) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Useful commands: `npm run build`, `npm run lint`, and `npm run preview`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Environment settings
 
-**Use GitHub Codespaces**
+Create a local `.env` with the Supabase project configuration if required. Vite variables prefixed `VITE_` are visible to users of the web application: only use publishable keys and never put private credentials into frontend variables. Configure row-level security and database policies before connecting real data.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Status
 
-## What technologies are used for this project?
+Portfolio prototype. The presence of deployment configuration or a website URL does not guarantee current uptime, secure access control, or production readiness.
 
-This project is built with:
+**Related:** [ClassLens](https://github.com/Harshad8623/Vision-Based-Attendance-System) — a separate attendance project with a Python/FastAPI backend.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c8f78d5e-5cf8-45f4-a8f4-c08efa3e1831) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Author:** [Harshad Madhav Dhuppe](https://github.com/Harshad8623)
